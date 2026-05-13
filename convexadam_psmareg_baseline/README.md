@@ -26,6 +26,8 @@ The generated displacement fields follow the official PSMAReg evaluation format:
 
 Python 3.8 is recommended.
 
+[MIR package](https://github.com/junyuchen245/MIR) is required to run this baseline.
+
 ```bash
 pip install -r requirements.txt
 ```

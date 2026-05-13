@@ -6,7 +6,7 @@ This official repository houses baseline methods, training scripts, and pretrain
 
 Please visit [***learn2reg.grand-challenge.org***](https://learn2reg.grand-challenge.org/learn2reg-2025/) for more information.
 
-$${\color{red}New!}$$ - 05/06/2025 - Launching the PSMAReg challenge at Learn2Reg 2026!
+$${\color{red}New!}$$ - 04/20/2026 - Launching the PSMAReg challenge at Learn2Reg 2026!
 
 ***Baseline models:***
 - ConvexAdam ([Official website](https://github.com/multimodallearning/convexAdam) | [Scripts](https://github.com/JHU-MedImage-Reg/Learn2Reg26_PSMA/tree/main/convexadam_psmareg_baseline))

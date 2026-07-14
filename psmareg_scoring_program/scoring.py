@@ -160,15 +160,19 @@ if not validation_entries:
 
 def compute_average_ct_label_dice(
     fixed_labels: np.ndarray,
+    moving_labels: np.ndarray,
     warped_labels: np.ndarray,
     label_ids=range(1, 118),
 ) -> float:
     dice_scores = []
     for label_id in label_ids:
-        dice_score = surface_metrics.compute_dice_coefficient(
-            fixed_labels == label_id,
-            warped_labels == label_id,
-        )
+        fixed_mask = fixed_labels == label_id
+        moving_mask = moving_labels == label_id
+        if not fixed_mask.any() or not moving_mask.any():
+            continue
+
+        warped_mask = warped_labels == label_id
+        dice_score = surface_metrics.compute_dice_coefficient(fixed_mask, warped_mask)
         if not np.isnan(dice_score):
             dice_scores.append(float(dice_score))
     if not dice_scores:
@@ -448,17 +452,21 @@ if __name__ == "__main__":
                 pet_lbls_mv_torch.unsqueeze(0).unsqueeze(0),
                 pred_disp_torch,
             ).squeeze(0).squeeze(0)
+            warped_pet_mv_torch = spatial_trans(
+                pet_img_mv_torch.unsqueeze(0).unsqueeze(0),
+                pred_disp_torch,
+            ).squeeze(0).squeeze(0)
 
             total_metabolic_tumor_volume_before = torch.count_nonzero(pet_lbls_mv_torch > 0).item()
             total_metabolic_tumor_volume_after = torch.count_nonzero(warped_pet_lbls_mv_torch > 0).item()
 
             total_lesion_glycolysis_before = torch.sum((pet_lbls_mv_torch > 0).float() * pet_img_mv_torch).item()
-            total_lesion_glycolysis_after = torch.sum((warped_pet_lbls_mv_torch > 0).float() * pet_img_mv_torch).item()
+            total_lesion_glycolysis_after = torch.sum((warped_pet_lbls_mv_torch > 0).float() * warped_pet_mv_torch).item()
 
         warped_ct_lbls_mv = torch.round(warped_ct_lbls_mv_torch).cpu().numpy()
         
         # Step 3: Compute evaluation metrics
-        average_ct_dice = compute_average_ct_label_dice(ct_lbls_fx, warped_ct_lbls_mv)
+        average_ct_dice = compute_average_ct_label_dice(ct_lbls_fx, ct_lbls_mv, warped_ct_lbls_mv)
         ct_dice_scores.append(average_ct_dice)
 
         average_ct_hd95 = compute_average_ct_label_hd95(
@@ -478,6 +486,7 @@ if __name__ == "__main__":
         
         pred_disp_np = pred_disp_torch.squeeze(0).cpu().numpy()
         mask = ct_img_fx[1:-1, 1:-1, 1:-1]
+        mask = (mask - np.min(mask)) / (np.max(mask) - np.min(mask) + 1e-8)
         mask = mask > 0
         
         trans_ = pred_disp_np + dd.get_identity_grid(pred_disp_np)

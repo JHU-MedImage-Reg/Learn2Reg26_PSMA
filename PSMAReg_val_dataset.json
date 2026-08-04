@@ -1,0 +1,222 @@
+{
+  "name": "PSMARegPSMA_preprocessed_validation",
+  "release": "0.1",
+  "description": "Validation split of the PSMAReg PSMA preprocessed CT/PET dataset. Each entry is a longitudinal pair: Baseline (fixed) and Follow-up 01 (moving), each with CT (0000) and PSMA PET (0001). Images live under ./imagesVal.",
+  "modality": {
+    "0000": "CT",
+    "0001": "PSMA PET"
+  },
+  "target_spacing": [
+    2.7344,
+    2.7344,
+    3.27
+  ],
+  "target_shape": [
+    192,
+    192,
+    288
+  ],
+  "numValidationPaired": 20,
+  "validation_paired": [
+    {
+      "subject": "PSMARegPSMA_0001",
+      "tracer": "PSMA",
+      "baseline_date": "2020-07-31",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0001_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0001_0001_00.nii.gz",
+      "Follow-up 01 Date": "2020-12-18",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0001_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0001_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0003",
+      "tracer": "PSMA",
+      "baseline_date": "2016-10-22",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0003_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0003_0001_00.nii.gz",
+      "Follow-up 01 Date": "2017-04-08",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0003_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0003_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0005",
+      "tracer": "PSMA",
+      "baseline_date": "2020-01-11",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0005_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0005_0001_00.nii.gz",
+      "Follow-up 01 Date": "2020-05-22",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0005_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0005_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0007",
+      "tracer": "PSMA",
+      "baseline_date": "2016-09-24",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0007_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0007_0001_00.nii.gz",
+      "Follow-up 01 Date": "2017-01-28",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0007_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0007_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0008",
+      "tracer": "PSMA",
+      "baseline_date": "2016-06-19",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0008_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0008_0001_00.nii.gz",
+      "Follow-up 01 Date": "2017-09-09",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0008_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0008_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0009",
+      "tracer": "PSMA",
+      "baseline_date": "2020-03-21",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0009_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0009_0001_00.nii.gz",
+      "Follow-up 01 Date": "2020-08-08",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0009_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0009_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0013",
+      "tracer": "PSMA",
+      "baseline_date": "2018-03-19",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0013_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0013_0001_00.nii.gz",
+      "Follow-up 01 Date": "2019-10-25",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0013_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0013_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0021",
+      "tracer": "PSMA",
+      "baseline_date": "2017-07-22",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0021_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0021_0001_00.nii.gz",
+      "Follow-up 01 Date": "2018-01-19",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0021_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0021_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0024",
+      "tracer": "PSMA",
+      "baseline_date": "2019-01-28",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0024_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0024_0001_00.nii.gz",
+      "Follow-up 01 Date": "2019-07-26",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0024_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0024_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0029",
+      "tracer": "PSMA",
+      "baseline_date": "2020-04-11",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0029_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0029_0001_00.nii.gz",
+      "Follow-up 01 Date": "2020-09-07",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0029_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0029_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0031",
+      "tracer": "PSMA",
+      "baseline_date": "2018-10-05",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0031_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0031_0001_00.nii.gz",
+      "Follow-up 01 Date": "2018-12-28",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0031_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0031_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0033",
+      "tracer": "PSMA",
+      "baseline_date": "2019-02-02",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0033_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0033_0001_00.nii.gz",
+      "Follow-up 01 Date": "2019-07-06",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0033_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0033_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0034",
+      "tracer": "PSMA",
+      "baseline_date": "2019-02-08",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0034_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0034_0001_00.nii.gz",
+      "Follow-up 01 Date": "2019-07-12",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0034_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0034_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0035",
+      "tracer": "PSMA",
+      "baseline_date": "2014-06-28",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0035_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0035_0001_00.nii.gz",
+      "Follow-up 01 Date": "2020-11-21",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0035_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0035_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0036",
+      "tracer": "PSMA",
+      "baseline_date": "2020-11-16",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0036_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0036_0001_00.nii.gz",
+      "Follow-up 01 Date": "2021-03-01",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0036_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0036_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0038",
+      "tracer": "PSMA",
+      "baseline_date": "2014-08-24",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0038_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0038_0001_00.nii.gz",
+      "Follow-up 01 Date": "2015-01-04",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0038_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0038_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0039",
+      "tracer": "PSMA",
+      "baseline_date": "2015-05-29",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0039_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0039_0001_00.nii.gz",
+      "Follow-up 01 Date": "2015-11-07",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0039_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0039_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0042",
+      "tracer": "PSMA",
+      "baseline_date": "2019-11-02",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0042_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0042_0001_00.nii.gz",
+      "Follow-up 01 Date": "2020-06-22",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0042_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0042_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0047",
+      "tracer": "PSMA",
+      "baseline_date": "2017-12-24",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0047_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0047_0001_00.nii.gz",
+      "Follow-up 01 Date": "2018-05-19",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0047_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0047_0001_01.nii.gz"
+    },
+    {
+      "subject": "PSMARegPSMA_0048",
+      "tracer": "PSMA",
+      "baseline_date": "2016-04-30",
+      "Baseline CT": "./imagesVal/PSMARegPSMA_0048_0000_00.nii.gz",
+      "Baseline PET": "./imagesVal/PSMARegPSMA_0048_0001_00.nii.gz",
+      "Follow-up 01 Date": "2016-10-24",
+      "Follow-up 01 CT": "./imagesVal/PSMARegPSMA_0048_0000_01.nii.gz",
+      "Follow-up 01 PET": "./imagesVal/PSMARegPSMA_0048_0001_01.nii.gz"
+    }
+  ]
+}

@@ -140,7 +140,7 @@ class SpatialTransformer(torch.nn.Module):
             new_locs = new_locs.permute(0, 2, 3, 4, 1)
             new_locs = new_locs[..., [2, 1, 0]]
 
-        return F.grid_sample(src, new_locs, align_corners=False, mode=self.mode)
+        return F.grid_sample(src, new_locs, align_corners=True, mode=self.mode)
 
 pred_zip_matches = glob.glob(str(PREDICTION_DIR / "*.zip"))
 if pred_zip_matches:

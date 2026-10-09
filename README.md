@@ -10,7 +10,7 @@ the challenge description, data access and submission rules.
 
 ## 🏆 Test-phase results
 
-The official ranking is out: **[Test-phase results](results/README.md)** —
+The official ranking is out: **[Test-phase results](https://github.com/JHU-MedImage-Reg/Learn2Reg26_PSMA/blob/main/PSMAReg_TestPhase_Results/README.md)** —
 final scores with bootstrap rank intervals, per-metric significance scores, an
 explanation of the ranking rule, organizer baselines, and qualitative examples
 of every method on hard test pairs.
